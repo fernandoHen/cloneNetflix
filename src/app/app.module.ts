@@ -10,10 +10,6 @@ import { ListTitlesComponent } from './shared/list-titles/list-titles.component'
 @NgModule({
   declarations: [
     AppComponent,
-
-@NgModule({
-  declarations: [
-    AppComponent,
     NavBarComponent,
     FullBannerComponent,
     ListTitlesComponent
