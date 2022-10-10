@@ -6,19 +6,21 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { FullBannerComponent } from './shared/full-banner/full-banner.component';
 import { ListTitlesComponent } from './shared/list-titles/list-titles.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     FullBannerComponent,
-    ListTitlesComponent
+    ListTitlesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent, NavBarComponent, FullBannerComponent, ListTitlesComponent]
+  bootstrap: [AppComponent, NavBarComponent, FullBannerComponent, ListTitlesComponent, FooterComponent]
 })
 export class AppModule { }
