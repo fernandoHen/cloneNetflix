@@ -1,3 +1,5 @@
+import { ElementRef } from '@angular/core';
+import { ViewChild } from '@angular/core';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -6,10 +8,29 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./title.component.scss']
 })
 export class TitleComponent implements OnInit {
-
-  constructor() { }
+  
   @Input() title: any;
+  @ViewChild('trailer', { static: true }) trailer!: ElementRef<HTMLVideoElement>;
+  constructor() { }
   ngOnInit(): void {
   }
+
+  playVideo() {
+    this.trailer.nativeElement.play();
+  }
+
+  stopVideo() {
+    this.trailer.nativeElement.currentTime = 0;
+    this.trailer.nativeElement.pause();
+  }
+
+  getMuted(): boolean {
+    return this.trailer.nativeElement.muted;
+  }
+
+  toggleSound(){
+    this.trailer.nativeElement.muted = !this.trailer.nativeElement.muted;
+  }
+
 
 }
