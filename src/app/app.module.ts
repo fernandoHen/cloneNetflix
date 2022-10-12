@@ -7,11 +7,7 @@ import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { FullBannerComponent } from './shared/full-banner/full-banner.component';
 import { ListTitlesComponent } from './shared/list-titles/list-titles.component';
 import { FooterComponent } from './shared/footer/footer.component';
-<<<<<<< HEAD
 import { TitleComponent } from './shared/title/title.component';
-=======
-import { TitleComponent } from './shared/title/title.component'
->>>>>>> 78d8a6a3de9f258759d1e022b2f80da4d8b3d796
 
 @NgModule({
   declarations: [
